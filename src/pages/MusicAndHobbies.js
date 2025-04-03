@@ -4,30 +4,24 @@ export default function MusicAndHobbies() {
   return (
     <div className="p-8 space-y-12">
       <section>
-        <h1 className="text-4xl font-bold mb-4">🎧 Music & Hobbies</h1>
+        <h1 className="text-4xl font-bold mb-4">Music & Hobbies</h1>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2">🎼 Music for Media</h2>
+        <h2 className="text-2xl font-semibold mb-2">🎧 Music for Media</h2>
         <p className="mb-4">
           I enjoy writing music for film, games, and other media. I lean into cinematic textures,
           ambient tones, and rhythmic builds that enhance storytelling.
         </p>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-medium">"Echoes in the Fog"</h3>
-            <audio controls className="w-full mt-2">
-              <source src="/audio/echoes-in-the-fog.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
+            <h3 className="text-xl font-medium">"Rupert'n'Riley"</h3>
+            <iframe width="60%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257682151&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <p className="text-sm text-gray-600 mt-1">Composed for a sci-fi short film, inspired by deep space isolation.</p>
           </div>
           <div>
             <h3 className="text-xl font-medium">"Low Light"</h3>
-            <audio controls className="w-full mt-2">
-              <source src="/audio/low-light.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
+            <iframe width="60%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257682151&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <p className="text-sm text-gray-600 mt-1">An ambient loop designed for background tension in puzzle games.</p>
           </div>
         </div>
