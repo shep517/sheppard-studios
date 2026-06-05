@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import MusicAndHobbies from './pages/MusicAndHobbies';
 import Contact from './pages/Contact';
+import Bible from './pages/Bible';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/music-and-hobbies" element={<MusicAndHobbies />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/bible" element={<Bible />} />
           </Routes>
         </main>
         <Footer />
