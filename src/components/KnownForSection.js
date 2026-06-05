@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Rocket, Code2, LineChart, Music2 } from 'lucide-react';
+import { Rocket, Code2, LineChart } from 'lucide-react';
 
 export default function KnownForSection() {
   const [expandedIndex, setExpandedIndex] = useState(null);

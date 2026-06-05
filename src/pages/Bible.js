@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import Anthropic from '@anthropic-ai/sdk';
 
 const OT_BOOKS = [
@@ -126,9 +126,11 @@ function BiblePage() {
     setSelectedBook(null);
   }, [searchQuery, bibleData, loadBibleData]);
 
-  const currentChapterData = selectedBook && bibleData && bibleData[selectedBook]
-    ? bibleData[selectedBook][String(selectedChapter)] || {}
-    : null;
+  const currentChapterData = useMemo(() => {
+    return selectedBook && bibleData && bibleData[selectedBook]
+      ? bibleData[selectedBook][String(selectedChapter)] || {}
+      : null;
+  }, [selectedBook, bibleData, selectedChapter]);
 
   const totalChapters = selectedBook
     ? (books.find(b => b.name === selectedBook)?.chapters || 1)

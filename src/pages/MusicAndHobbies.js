@@ -16,12 +16,12 @@ export default function MusicAndHobbies() {
         <div className="space-y-6">
           <div>
             <h3 className="text-xl font-medium">"Rupert'n'Riley"</h3>
-            <iframe width="60%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257682151&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe title="Rupert'n'Riley on SoundCloud" width="60%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257682151&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <p className="text-sm text-gray-600 mt-1">Composed for a sci-fi short film, inspired by deep space isolation.</p>
           </div>
           <div>
             <h3 className="text-xl font-medium">"Low Light"</h3>
-            <iframe width="60%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257682151&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe title="Low Light on SoundCloud" width="60%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257682151&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <p className="text-sm text-gray-600 mt-1">An ambient loop designed for background tension in puzzle games.</p>
           </div>
         </div>
