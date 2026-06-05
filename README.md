@@ -13,7 +13,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/sheppard-studios.git
+git clone https://github.com/shep517/sheppard-studios.git
 cd sheppard-studios
 ```
 
@@ -65,6 +65,32 @@ sheppard-studios/
 ├── package.json    # Project dependencies and scripts
 └── tailwind.config.js # Tailwind CSS configuration
 ```
+
+
+## Deployment
+
+This site is hosted as a static site on **AWS S3** with **CloudFront** as the CDN.
+
+### Infrastructure
+
+- **S3 Bucket:** `sheppard-studios.com` — stores the production build output
+- **CloudFront** — serves the site with caching and HTTPS
+
+### Auto-Deployment
+
+Pushes to the `main` branch trigger a **GitHub Actions** workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) that:
+
+1. Installs dependencies and runs `npm run build`
+2. Syncs the `build/` folder to the S3 bucket
+3. Invalidates the CloudFront cache so changes go live immediately
+
+### Required GitHub Secrets
+
+| Secret | Description |
+|---|---|
+| `AWS_ACCESS_KEY_ID` | IAM access key with S3 and CloudFront permissions |
+| `AWS_SECRET_ACCESS_KEY` | Corresponding secret key |
+| `CLOUDFRONT_DISTRIBUTION_ID` | CloudFront distribution ID |
 
 
 ## Technologies Used
